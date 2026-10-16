@@ -1,0 +1,27 @@
+{
+  "source": "hexdocs.pm/google_api_content_warehouse/0.4.0",
+  "extracted": "2026-10-16",
+  "guessed_names_404": [
+    "QualityTwiddlerCrapsCrapsData",
+    "IndexingUrlPattern",
+    "QualityBoost",
+    "QualityFreshnessFreshnessData",
+    "GlueUserBehaviorSignals",
+    "QualitySiteQualityScore",
+    "QualityOriginalContentScore",
+    "QualityPreviewSnippet",
+    "QualityNsrSite2vecEmbedding",
+    "QualityTimebasedSyntacticDateInfo",
+    "RepositoryWebrefWebrefEntityMetadata",
+    "QualityNavboostCrapsCrapsIpPrior",
+    "IndexingTrawler"
+  ],
+  "note": "These names circulated in SEO blog analyses. None exist as standalone modules in hexdocs 0.4.0 Elixir client. They may be nested protos, different API versions, or renamed.",
+  "verified_this_batch": [
+    "QualityTimebasedLastSignificantUpdate",
+    "QualityRankembedMustangMustangRankEmbedInfo",
+    "IndexingDocjoinerAnchorSpamInfo",
+    "SpamBrainData",
+    "SpamBrainScore"
+  ]
+}
