@@ -1,0 +1,18 @@
+{
+  "module": "GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsCrapsClickSignals",
+  "hexdocs_version": "0.4.0",
+  "source_url": "https://hexdocs.pm/google_api_content_warehouse/0.4.0/GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsCrapsClickSignals.html",
+  "field_count": 10,
+  "fields": [
+    {"name": "absoluteImpressions", "type": "float()", "description": "Thus far this field is only used for host level unsquashed impressions. When compressed (e.g., in perdocdata proto, CompressedQualitySignals), this value is represented individually and thus is generally incompatible with the other values which are compressed as click-ratios."},
+    {"name": "badClicks", "type": "float()", "description": ""},
+    {"name": "clicks", "type": "float()", "description": ""},
+    {"name": "goodClicks", "type": "float()", "description": ""},
+    {"name": "impressions", "type": "float()", "description": ""},
+    {"name": "lastLongestClicks", "type": "float()", "description": ""},
+    {"name": "unicornClicks", "type": "float()", "description": "The subset of clicks that are associated with an event from a Unicorn user."},
+    {"name": "unsquashedClicks", "type": "float()", "description": "This is not being populated for the current format - instead two instances of CrapsClickSignals (squashed/unsquashed) are used. We are migrating to the new format where this field will be populated."},
+    {"name": "unsquashedImpressions", "type": "float()", "description": "This is not being populated for the current format - instead two instances of CrapsClickSignals (squashed/unsquashed) are used. We are migrating to the new format where this field will be populated."},
+    {"name": "unsquashedLastLongestClicks", "type": "float()", "description": ""}
+  ]
+}

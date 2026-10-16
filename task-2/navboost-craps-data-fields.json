@@ -1,0 +1,30 @@
+{
+  "module": "GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsCrapsData",
+  "hexdocs_version": "0.4.0",
+  "source_url": "https://hexdocs.pm/google_api_content_warehouse/0.4.0/GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsCrapsData.html",
+  "field_count": 22,
+  "fields": [
+    {"name": "query", "type": "String.t", "description": ""},
+    {"name": "url", "type": "String.t", "description": ""},
+    {"name": "country", "type": "String.t", "description": "The two-letter uppercase country slice"},
+    {"name": "language", "type": "String.t", "description": "The language slice"},
+    {"name": "device", "type": "String.t", "description": ""},
+    {"name": "sliceTag", "type": "String.t", "description": "arbitrary string for slicing by device type country locale"},
+    {"name": "patternLevel", "type": "integer()", "description": "Level of pattern, more general patterns get higher values"},
+    {"name": "patternSccStats", "type": "GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsPatternSccStats.t", "description": ""},
+    {"name": "goodClicks", "type": "float()", "description": ""},
+    {"name": "badClicks", "type": "float()", "description": ""},
+    {"name": "clicks", "type": "float()", "description": ""},
+    {"name": "impressions", "type": "float()", "description": "Can become legacy"},
+    {"name": "lastLongestClicks", "type": "float()", "description": "The number of clicks that were last and longest in related user queries"},
+    {"name": "squashed", "type": "boolean()", "description": ""},
+    {"name": "unsquashed", "type": "boolean()", "description": "We will start using this one for the retuning rollout"},
+    {"name": "mobileData", "type": "GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsMobileData.t", "description": "DO NOT USE use mobile signals instead"},
+    {"name": "mobileSignals", "type": "GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsMobileSignals.t", "description": "tier one two mobile interfaces in QSessions"},
+    {"name": "unsquashedMobileSignals", "type": "GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsMobileSignals.t", "description": ""},
+    {"name": "features", "type": "GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsCrapsClickSignals.t", "description": "CrapsClickSignals for specific features"},
+    {"name": "voterTokenCount", "type": "integer()", "description": "lower bound on distinct users for privacy filtering"},
+    {"name": "packedIpAddress", "type": "integer()", "description": ""},
+    {"name": "unscaledIpPriorBadFraction", "type": "integer()", "description": "references craps-ip-prior.h and craps-penalty.cc"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "module": "GoogleApi.ContentWarehouse.V1.Model.QualityAuthorityTopicEmbeddingsVersionedItem",
+  "hexdocs_version": "0.4.0",
+  "source_url": "https://hexdocs.pm/google_api_content_warehouse/0.4.0/GoogleApi.ContentWarehouse.V1.Model.QualityAuthorityTopicEmbeddingsVersionedItem.html",
+  "field_count": 5,
+  "module_description": "Proto populated into shards and copied to superroot. Message storing a versioned TopicEmbeddings scores. This is copied from TopicEmbeddings in docjoins.",
+  "fields": [
+    {"name": "pageEmbedding", "type": "String.t", "description": "(no description provided)"},
+    {"name": "siteEmbedding", "type": "String.t", "description": "Compressed site/page embeddings."},
+    {"name": "siteFocusScore", "type": "number()", "description": "Number denoting how much a site is focused on one topic."},
+    {"name": "siteRadius", "type": "number()", "description": "The measure of how far page_embeddings deviate from the site_embedding."},
+    {"name": "versionId", "type": "integer()", "description": "(no description provided)"}
+  ]
+}
