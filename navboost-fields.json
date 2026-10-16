@@ -1,0 +1,16 @@
+{
+  "module": "GoogleApi.ContentWarehouse.V1.Model.QualityNavboostCrapsCrapsClickSignals",
+  "source": "hexdocs v0.4.0",
+  "fields": [
+    {"name": "absoluteImpressions", "type": "float", "desc": "Host-level unsquashed impressions only"},
+    {"name": "badClicks", "type": "float", "desc": ""},
+    {"name": "clicks", "type": "float", "desc": ""},
+    {"name": "goodClicks", "type": "float", "desc": ""},
+    {"name": "impressions", "type": "float", "desc": ""},
+    {"name": "lastLongestClicks", "type": "float", "desc": ""},
+    {"name": "unicornClicks", "type": "float", "desc": "Clicks from Unicorn users"},
+    {"name": "unsquashedClicks", "type": "float", "desc": "Not populated in current format"},
+    {"name": "unsquashedImpressions", "type": "float", "desc": "Not populated in current format"},
+    {"name": "unsquashedLastLongestClicks", "type": "float", "desc": ""}
+  ]
+}
