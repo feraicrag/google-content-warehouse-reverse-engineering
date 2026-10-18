@@ -1,31 +1,22 @@
-# Corrections to Circulating Analyses
+# Corrections
 
-## 1. siteFocusScore and siteRadius module location
+## contentEffort — REVERSED (2026-10-18)
 
-Wikipedia and multiple secondary analyses state that siteFocusScore and siteRadius live in QualityNsrNsrData. This is incorrect.
+Previous Task 1 claim that contentEffort was NOT FOUND in hexdocs 0.4.0 is incorrect.
 
-Verified location: QualityAuthorityTopicEmbeddingsVersionedItem (5 fields).
+**Confirmed location:** `GoogleApi.ContentWarehouse.V1.Model.QualityNsrPQData`
 
-QualityNsrNsrData contains site2vecEmbedding and site2vecEmbeddingEncoded but does not contain siteFocusScore or siteRadius.
+- **Field:** `contentEffort`
+- **Type:** `list(GoogleApi.ContentWarehouse.V1.Model.QualityNsrVersionedFloatSignal.t)`
+- **Default:** `nil`
+- **Description (literal):** "LLM-based effort estimation for article pages (see landspeeder/4311817)."
 
-## 2. homepagePagerankNs and homePageInfo location
+Source: https://hexdocs.pm/google_api_content_warehouse/0.4.0/GoogleApi.ContentWarehouse.V1.Model.QualityNsrPQData.html
 
-Some analyses place these in CompressedQualitySignals. They are in PerDocData.
+## siteFocusScore / siteRadius module location
 
-homepagePagerankNs: integer, page-rank of homepage copied from cdoc.doc().pagerank_ns().
-homePageInfo: integer, trust level enum (NOT_HOMEPAGE, NOT_TRUSTED, PARTIALLY_TRUSTED, FULLY_TRUSTED).
+Wikipedia and some secondary analyses placed these in QualityNsrNsrData. Primary source places them in `QualityAuthorityTopicEmbeddingsVersionedItem`.
 
-## 3. contentEffort
+## homepagePagerankNs / homePageInfo
 
-Cited in multiple analyses as an LLM-based effort estimation field. Not found in any module verified against hexdocs v0.4.0. Status: unverified against primary source.
-
-## 4. Module count
-
-Commit d7a637f added 2,596 files. Wikipedia and SparkToro cite 2,596 modules and 14,014 attributes. Hexdocs API reference page shows 162 model modules visible on the index page; the full client contains 2,596 modules.
-
-## Sources
-
-- hexdocs v0.4.0 (primary)
-- Wikipedia 2024 Google Search documentation leak (secondary, contains error)
-- iPullRank analysis (secondary)
-- SparkToro analysis (secondary)
+Located in PerDocData, not CompressedQualitySignals.
